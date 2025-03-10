@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // 或者更高版本
+    "module": "ESNext", // 使用 ES Modules
+    "lib": ["ES6"],
+    "types": ["node"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "./lib",
+    "rootDir": "./src"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

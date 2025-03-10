@@ -1,0 +1,49 @@
+{
+  "name": "nzw-cli",
+  "version": "1.0.0",
+  "description": "nzw脚手架",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "yarn build && node lib/index.js create",
+    "link": "npm link",
+    "release": "yarn build && npm publish"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "nzw": "./lib/index.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "cpy": "^11.1.0",
+    "ora": "^8.2.0",
+    "prettier": "^3.5.3",
+    "rollup": "^4.34.9",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-delete": "^3.0.0",
+    "rollup-plugin-progress": "^1.1.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "rollup-plugin-visualizer": "^5.14.0",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "inquirer": "^12.4.2",
+    "mem-fs": "^4.1.2",
+    "mem-fs-editor": "^11.1.4"
+  }
+}

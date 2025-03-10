@@ -1,0 +1,6 @@
+/node_modules
+/lib
+/templates/react-tpl/node_modules
+/templates/vue-tpl/node_modules
+/packAnalysis.html
+/.npmrc

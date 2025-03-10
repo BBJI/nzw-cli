@@ -1,0 +1,13 @@
+// {
+//   "plugins": ["jsx-control-statements"],
+//   "extends": ["plugin:jsx-control-statements/recommended"],
+//   "rules": {
+//     "react/jsx-no-undef": ["error", { "allowGlobals": true }],
+//   },
+//   "globals": {
+//     "For": "writable",
+//     "Choose": "writable",
+//     "When": "writable",
+//     "Otherwise": "writable",
+//   },
+// }
