@@ -8,7 +8,8 @@
     "build": "rollup -c",
     "test": "yarn build && node lib/index.js create",
     "link": "npm link",
-    "release": "yarn build && npm publish"
+    "release": "yarn build && npm publish",
+    "prepublishOnly": "npm version patch"
   },
   "keywords": [
     "cli"
